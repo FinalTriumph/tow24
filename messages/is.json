@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "TOW24 – Dráttarþjónusta á Íslandi | 24/7",
+    "description": "TOW24 veitir fagleg dráttarþjónustu og aðstoð á vegum á Íslandi allan sólarhringinn. Hringdu núna og við hjálpum þér fljótt."
+  },
+  "nav": {
+    "services": "Þjónustur",
+    "whyUs": "Af hverju við",
+    "gallery": "Myndir",
+    "contact": "Hafa samband"
+  },
+  "hero": {
+    "badge": "Ísland • Virkt allan sólarhringinn",
+    "line1": "DRÁTTARÞJÓNUSTA",
+    "line2": "Á ÍSLANDI",
+    "sub": "Föst, áreiðanleg og fagleg dráttarþjónusta hér á landi — 24 tíma á sólarhring, 7 daga vikunnar.",
+    "callNow": "HRINGDU NÚ",
+    "ourServices": "SJÁ ÞJÓNUSTU",
+    "stat1num": "24/7",
+    "stat1lbl": "Alltaf Opið",
+    "stat2num": "60 mín",
+    "stat2lbl": "Meðalviðbragðstími",
+    "stat3num": "100%",
+    "stat3lbl": "Fagleg Þjónusta"
+  },
+  "services": {
+    "label": "ÞJÓNUSTUR",
+    "title": "HVAÐ VIÐ BJÓÐUM UP Á",
+    "desc": "Við bjóðum upp á margvíslega þjónustu tengda flutningi og björgun ökutækja um allt land.",
+    "items": [
+      {
+        "icon": "tow",
+        "name": "Dráttarþjónusta",
+        "desc": "Flutningur ökutækja til verkstæðis, heim eða á aðra staði. Hentugur fyrir alla gerð bíla.",
+        "price": "Frá 19.900 kr",
+        "unit": "/ ferð"
+      },
+      {
+        "icon": "flat",
+        "name": "Loftlækt / Leki",
+        "desc": "Dekkjaskipti á vettvangi eða flutningur ef dekkið er of skemmt til að laga á staðnum.",
+        "price": "Frá 9.900 kr",
+        "unit": "/ þjónusta"
+      },
+      {
+        "icon": "battery",
+        "name": "Rafhlöðuvandamál",
+        "desc": "Ræsing með hjálparkapla eða skipti á rafhlöðu á vettvangi þegar á þarf að halda.",
+        "price": "Frá 7.900 kr",
+        "unit": "/ þjónusta"
+      },
+      {
+        "icon": "fuel",
+        "name": "Eldsneytisþjónusta",
+        "desc": "Eldsneytislosun eða kveikja á bíl eftir að hafa keyrt upp tóman. Kemur fljótt.",
+        "price": "Frá 8.900 kr",
+        "unit": "/ þjónusta"
+      },
+      {
+        "icon": "lock",
+        "name": "Útilokun",
+        "desc": "Hjálp þegar lykillinn er inni í læstum bíl. Hröð og skaðlaus opnun.",
+        "price": "Frá 11.900 kr",
+        "unit": "/ þjónusta"
+      },
+      {
+        "icon": "offroad",
+        "name": "Björgun af vegum",
+        "desc": "Dráttur ökutækis sem er fast í mýri, snjó eða gjörsamlega komið af vegi.",
+        "price": "Frá 24.900 kr",
+        "unit": "/ ferð"
+      }
+    ]
+  },
+  "why": {
+    "label": "AF HVERJU TOW24",
+    "title": "ÞJÓNUSTA SEM TREYSTIR Á",
+    "desc": "Við leggjum áherslu á hraða, öryggi og fagmennsku í hvert sinn.",
+    "items": [
+      {
+        "title": "Hröð Viðbrögð",
+        "text": "Við erum hjá þér á 30–60 mínútum að jafnaði, hvar sem þú ert á landinu."
+      },
+      {
+        "title": "Fagleg Þekking",
+        "text": "Reynd teymi með þekkingu á öllum gerðum ökutækja, frá persónubílum til þungabíla."
+      },
+      {
+        "title": "Sanngjarnt Verð",
+        "text": "Skýr verðskrá án falinna gjalda. Þú veist hvað þú greiðir áður en við hefjum vinnu."
+      },
+      {
+        "title": "24/7 Þjónusta",
+        "text": "Opið alla daga, á öllum tímum. Við svörum alltaf þegar þú þarft á okkur að halda."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "MYNDIR",
+    "title": "BÚNAÐUR OKKAR",
+    "placeholder": "Mynd"
+  },
+  "cta": {
+    "title": "ÞARFTU HJÁLP NÚ?",
+    "sub": "Hringdu í okkur og við erum á leiðinni.",
+    "callNow": "HRINGDU NÚ"
+  },
+  "contact": {
+    "label": "HAFÐU SAMBAND",
+    "title": "HVAR VIÐ ERUM",
+    "phoneLbl": "Sími",
+    "phoneVal": "+354 XXX XXXX",
+    "emailLbl": "Tölvupóstur",
+    "emailVal": "info@tow24.is",
+    "areaLbl": "Þjónustusvæði",
+    "areaVal": "Allt Ísland",
+    "hoursLbl": "Opnunartímar",
+    "hoursVal": "24/7 – Alltaf opið"
+  },
+  "footer": {
+    "tagline": "Fagleg dráttarþjónusta á Íslandi.",
+    "services": "Þjónustur",
+    "contact": "Hafa Samband",
+    "privacy": "Persónuvernd",
+    "copy": "© 2025 TOW24. Öll réttindi áskilin."
+  },
+  "cookie": {
+    "message": "Við notum vafrakökur til að bæta upplifun þína. Sjá",
+    "privacy": "persónuverndarstefnu",
+    "accept": "Samþykkja",
+    "decline": "Hafna",
+    "dismiss": "Í lagi"
+  },
+  "privacy": {
+    "title": "Persónuverndarstefna",
+    "updated": "Síðast uppfært: Janúar 2025",
+    "s1title": "1. Hverjir við erum",
+    "s1": "TOW24 rekur vefsíðuna tow24.is og veitir dráttarþjónustu og aðstoð á vegum á Íslandi. Þessi persónuverndarstefna útskýrir hvernig við söfnum, notum og verndum persónuupplýsingar þínar. Hafðu samband: info@tow24.is",
+    "s2title": "2. Gögn sem við söfnum",
+    "s2intro": "Við gætum safnað eftirfarandi gögnum þegar þú notar vefsíðuna okkar eða hefur samband við okkur:",
+    "s2items": [
+      "Nafn og samskiptaupplýsingar (símanúmer, tölvupóstur) þegar þú hringir eða hefur samband",
+      "Tæknileg gögn: IP-tala, tegund vafra, síður sem heimsóttar voru, tími heimsóknar (í gegnum vafrakökur)",
+      "Tungumál og þema-val geymt í vafrakökum í tækinu þínu"
+    ],
+    "s3title": "3. Hvernig við notum gögnin þín",
+    "s3intro": "Við notum gögnin þín til að:",
+    "s3items": [
+      "Veita dráttarþjónustu og aðstoð á vegum",
+      "Svara fyrirspurnum þínum",
+      "Bæta vefsíðu okkar og þjónustu",
+      "Muna tungumál- og þema-val þitt"
+    ],
+    "s4title": "4. Vafrakökur",
+    "s4p1": "Við notum eftirfarandi vafrakökur:",
+    "s4items": [
+      "tow24_lang — Geymir tungumálval þitt. Rennur út eftir 365 daga.",
+      "tow24_theme — Geymir valið litaþema. Rennur út eftir 365 daga.",
+      "tow24_cookie_consent — Geymir samþykki þitt varðandi vafrakökur. Rennur út eftir 365 daga."
+    ],
+    "s4p2": "Þetta eru eingöngu hagnýtar vafrakökur. Við notum ekki auglýsinga- eða rakningarvafrakökur.",
+    "s5title": "5. Þriðju aðilar",
+    "s5": "Við notum Google Fonts til að hlaða leturgerðir. Þetta gæti valdið því að vafrinn þinn hefur samband við þjóna Google. Við deilum persónuupplýsingum þínum ekki með öðrum þriðju aðilum.",
+    "s6title": "6. Varðveisla gagna",
+    "s6": "Við geymum persónuupplýsingar þínar aðeins eins lengi og nauðsynlegt er til að veita þjónustu okkar eða eins og lög kveða á um.",
+    "s7title": "7. Réttindi þín",
+    "s7": "Samkvæmt GDPR hefur þú rétt til að fá aðgang að, leiðrétta eða eyða persónuupplýsingum þínum. Til að nýta þér þessi réttindi skaltu hafa samband við okkur á info@tow24.is.",
+    "s8title": "8. Öryggi",
+    "s8": "Vefsíða okkar notar HTTPS-dulkóðun. Við beitum viðeigandi tæknilegum ráðstöfunum til að vernda gögnin þín.",
+    "s9title": "9. Breytingar",
+    "s9": "Við gætum uppfært þessa stefnu af og til. Dagsetningin efst á síðunni sýnir hvenær hún var síðast endurskoðuð.",
+    "s10title": "10. Hafa samband",
+    "s10": "Fyrir spurningar um þessa stefnu, vinsamlegast hafðu samband: info@tow24.is",
+    "backHome": "← Til baka"
+  }
+}

@@ -1,0 +1,205 @@
+import { getTranslations } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
+import { locales } from '../../lib/locales';
+import RevealWrapper from '../../components/RevealWrapper';
+import { Icon } from '../../components/Icons';
+
+export function generateStaticParams() {
+  return locales.map(locale => ({ locale }));
+}
+
+export default async function HomePage({ params: { locale } }) {
+  setRequestLocale(locale);
+
+  const tHero     = await getTranslations({ locale, namespace: 'hero' });
+  const tServices = await getTranslations({ locale, namespace: 'services' });
+  const tWhy      = await getTranslations({ locale, namespace: 'why' });
+  const tGallery  = await getTranslations({ locale, namespace: 'gallery' });
+  const tCta      = await getTranslations({ locale, namespace: 'cta' });
+  const tContact  = await getTranslations({ locale, namespace: 'contact' });
+
+  const services = tServices.raw('items');
+  const whyItems = tWhy.raw('items');
+  const galleryItems = [
+    { cls: 'g1' }, { cls: 'g2' }, { cls: 'g3' }, { cls: 'g4' }, { cls: 'g5' },
+  ];
+
+  const contactItems = [
+    { icon: 'phone',    label: tContact('phoneLbl'), value: tContact('phoneVal'), href: 'tel:+354XXXXXXX' },
+    { icon: 'email',    label: tContact('emailLbl'), value: tContact('emailVal'), href: 'mailto:info@tow24.is' },
+    { icon: 'location', label: tContact('areaLbl'),  value: tContact('areaVal'),  href: null },
+    { icon: 'clock',    label: tContact('hoursLbl'), value: tContact('hoursVal'), href: null },
+  ];
+
+  return (
+    <>
+      {/* ── HERO ─────────────────────────────────────────── */}
+      <section className="hero" id="top">
+        <div className="hero-bg" />
+        <div className="container">
+          <div className="hero-content">
+            <div className="hero-badge">
+              🚛 {tHero('badge')}
+            </div>
+            <h1 className="hero-title">
+              {tHero('line1')}
+              <span className="line2">{tHero('line2')}</span>
+            </h1>
+            <p className="hero-sub">{tHero('sub')}</p>
+            <div className="hero-cta">
+              <a href="tel:+354XXXXXXX" className="btn-call">
+                <Icon name="phone" size={20} />
+                {tHero('callNow')}
+              </a>
+              <a href="#services" className="btn-scroll">
+                {tHero('ourServices')}
+              </a>
+            </div>
+            <div className="hero-stats">
+              <div className="stat-item">
+                <div className="stat-num">{tHero('stat1num')}</div>
+                <div className="stat-label">{tHero('stat1lbl')}</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-num">{tHero('stat2num')}</div>
+                <div className="stat-label">{tHero('stat2lbl')}</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-num">{tHero('stat3num')}</div>
+                <div className="stat-label">{tHero('stat3lbl')}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SERVICES ─────────────────────────────────────── */}
+      <section className="services-section" id="services">
+        <div className="container">
+          <RevealWrapper>
+            <span className="section-label">{tServices('label')}</span>
+            <h2 className="section-title">{tServices('title')}</h2>
+            <p className="section-desc">{tServices('desc')}</p>
+          </RevealWrapper>
+          <div className="services-grid">
+            {services.map((s, i) => (
+              <RevealWrapper key={i}>
+                <div className="service-card">
+                  <div className="service-icon">
+                    <Icon name={s.icon} size={24} />
+                  </div>
+                  <div className="service-name">{s.name}</div>
+                  <p className="service-desc">{s.desc}</p>
+                  <div className="service-price">
+                    {s.price}
+                    <span>{s.unit}</span>
+                  </div>
+                </div>
+              </RevealWrapper>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHY US ───────────────────────────────────────── */}
+      <section className="why-section" id="why">
+        <div className="container">
+          <RevealWrapper>
+            <span className="section-label">{tWhy('label')}</span>
+            <h2 className="section-title">{tWhy('title')}</h2>
+            <p className="section-desc">{tWhy('desc')}</p>
+          </RevealWrapper>
+          <div className="why-grid">
+            {whyItems.map((w, i) => (
+              <RevealWrapper key={i}>
+                <div className="why-card">
+                  <div className="why-num">0{i + 1}</div>
+                  <div className="why-title">{w.title}</div>
+                  <p className="why-text">{w.text}</p>
+                </div>
+              </RevealWrapper>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GALLERY ──────────────────────────────────────── */}
+      <section className="gallery-section" id="gallery">
+        <div className="container">
+          <RevealWrapper>
+            <span className="section-label">{tGallery('label')}</span>
+            <h2 className="section-title">{tGallery('title')}</h2>
+          </RevealWrapper>
+          <div className="gallery-grid">
+            {galleryItems.map((item, i) => (
+              <div key={i} className={`gallery-item ${item.cls}`}>
+                <div className="gallery-placeholder">
+                  <Icon name="truck" size={36} />
+                  <span>{tGallery('placeholder')} {i + 1}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA BANNER ───────────────────────────────────── */}
+      <section className="cta-banner">
+        <div className="container">
+          <div className="cta-inner">
+            <div>
+              <div className="cta-title">{tCta('title')}</div>
+              <div className="cta-sub">{tCta('sub')}</div>
+            </div>
+            <a href="tel:+354XXXXXXX" className="btn-call-dark">
+              <Icon name="phone" size={20} />
+              {tCta('callNow')}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CONTACT ──────────────────────────────────────── */}
+      <section className="contact-section" id="contact">
+        <div className="container">
+          <RevealWrapper>
+            <span className="section-label">{tContact('label')}</span>
+            <h2 className="section-title">{tContact('title')}</h2>
+          </RevealWrapper>
+          <div className="contact-grid">
+            <div className="contact-info">
+              {contactItems.map((item, i) => {
+                const inner = (
+                  <>
+                    <div className="contact-icon">
+                      <Icon name={item.icon} size={18} />
+                    </div>
+                    <div>
+                      <div className="contact-label">{item.label}</div>
+                      <div className="contact-value">{item.value}</div>
+                    </div>
+                  </>
+                );
+                return item.href ? (
+                  <RevealWrapper key={i}>
+                    <a href={item.href} className="contact-item">{inner}</a>
+                  </RevealWrapper>
+                ) : (
+                  <RevealWrapper key={i}>
+                    <div className="contact-item">{inner}</div>
+                  </RevealWrapper>
+                );
+              })}
+            </div>
+            <RevealWrapper>
+              <div className="contact-map">
+                <Icon name="map" size={36} />
+                <span>Iceland</span>
+              </div>
+            </RevealWrapper>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

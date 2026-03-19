@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "TOW24 – Evakuators Islandē | Diennakts 24/7",
+    "description": "TOW24 sniedz ātrus un profesionālus evakuācijas un ceļa palīdzības pakalpojumus visā Islandē diennakts režīmā. Zvaniet tagad."
+  },
+  "nav": {
+    "services": "Pakalpojumi",
+    "whyUs": "Kāpēc mēs",
+    "gallery": "Galerija",
+    "contact": "Kontakti"
+  },
+  "hero": {
+    "badge": "Islande • Pieejams 24/7",
+    "line1": "EVAKUĀCIJAS",
+    "line2": "PAKALPOJUMI",
+    "sub": "Ātra, uzticama un profesionāla evakuatora un ceļa palīdzības dienesta pakalpojumi visā Islandē — 24 stundas diennaktī, 7 dienas nedēļā.",
+    "callNow": "ZVANĪT TAGAD",
+    "ourServices": "PAKALPOJUMI",
+    "stat1num": "24/7",
+    "stat1lbl": "Vienmēr Pieejami",
+    "stat2num": "60 min",
+    "stat2lbl": "Vid. Ierašanās Laiks",
+    "stat3num": "100%",
+    "stat3lbl": "Profesionāla Apkalpošana"
+  },
+  "services": {
+    "label": "PAKALPOJUMI",
+    "title": "KO MĒS PIEDĀVĀJAM",
+    "desc": "Mēs nodrošinām pilnu evakuācijas un ceļa palīdzības pakalpojumu klāstu visā Islandē.",
+    "items": [
+      {
+        "icon": "tow",
+        "name": "Evakuācija",
+        "desc": "Transportlīdzekļa nogāde uz servisu, mājām vai citu galamērķi. Piemērots visiem transportlīdzekļiem.",
+        "price": "No 19 900 ISK",
+        "unit": "/ brauciens"
+      },
+      {
+        "icon": "flat",
+        "name": "Riepu Problēmas",
+        "desc": "Riepu maiņa uz vietas vai evakuācija, ja riepa ir pārāk bojāta, lai to salabotu uz ceļa.",
+        "price": "No 9 900 ISK",
+        "unit": "/ pakalpojums"
+      },
+      {
+        "icon": "battery",
+        "name": "Akumulatora Problēmas",
+        "desc": "Iedarbināšana ar startēšanas kabeļiem vai akumulatora maiņa uz vietas, kad jāturpina ceļš.",
+        "price": "No 7 900 ISK",
+        "unit": "/ pakalpojums"
+      },
+      {
+        "icon": "fuel",
+        "name": "Degvielas Piegāde",
+        "desc": "Degvielas piegāde vai palīdzība pēc tukša tanka. Ierodamies ātri, lai jūs ilgi negaidītu.",
+        "price": "No 8 900 ISK",
+        "unit": "/ pakalpojums"
+      },
+      {
+        "icon": "lock",
+        "name": "Aizslēgtas Atslēgas",
+        "desc": "Palīdzība, kad atslēgas ir aizslēgtas automašīnā. Ātra un bez bojājumiem.",
+        "price": "No 11 900 ISK",
+        "unit": "/ pakalpojums"
+      },
+      {
+        "icon": "offroad",
+        "name": "Bezceļu Evakuācija",
+        "desc": "Iestrēguša transportlīdzekļa izvilkšana no dubļiem, sniega vai bezceļa apstākļiem.",
+        "price": "No 24 900 ISK",
+        "unit": "/ brauciens"
+      }
+    ]
+  },
+  "why": {
+    "label": "KĀPĒC TOW24",
+    "title": "UZTICAMS SERVISS",
+    "desc": "Mēs piešķiram prioritāti ātrumam, drošībai un profesionalitātei katru reizi.",
+    "items": [
+      {
+        "title": "Ātra Reaģēšana",
+        "text": "Vidēji ierodamies 30–60 minūšu laikā, lai kur jūs atrastos Islandē."
+      },
+      {
+        "title": "Profesionālas Zināšanas",
+        "text": "Pieredzējusi komanda ar zināšanām par visiem transportlīdzekļu veidiem."
+      },
+      {
+        "title": "Godīgas Cenas",
+        "text": "Skaidrs cenrādis bez slēptām izmaksām. Jūs zināt cenu pirms darba uzsākšanas."
+      },
+      {
+        "title": "24/7 Serviss",
+        "text": "Strādājam katru dienu, jebkurā laikā. Vienmēr atbildam, kad mūs vajag visvairāk."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "GALERIJA",
+    "title": "MŪSU TEHNIKA",
+    "placeholder": "Foto"
+  },
+  "cta": {
+    "title": "VAJAG PALĪDZĪBU TŪLĪT?",
+    "sub": "Zvaniet mums un mēs jau braucam.",
+    "callNow": "ZVANĪT TAGAD"
+  },
+  "contact": {
+    "label": "KONTAKTI",
+    "title": "SAZINĀTIES AR MUMS",
+    "phoneLbl": "Tālrunis",
+    "phoneVal": "+354 XXX XXXX",
+    "emailLbl": "E-pasts",
+    "emailVal": "info@tow24.is",
+    "areaLbl": "Apkalpošanas Zona",
+    "areaVal": "Visa Islande",
+    "hoursLbl": "Darba Laiks",
+    "hoursVal": "24/7 – Vienmēr atvērts"
+  },
+  "footer": {
+    "tagline": "Profesionāls evakuators Islandē.",
+    "services": "Pakalpojumi",
+    "contact": "Kontakti",
+    "privacy": "Privātuma Politika",
+    "copy": "© 2025 TOW24. Visas tiesības aizsargātas."
+  },
+  "cookie": {
+    "message": "Mēs izmantojam sīkdatnes, lai uzlabotu jūsu pieredzi. Skatīt",
+    "privacy": "privātuma politiku",
+    "accept": "Pieņemt",
+    "decline": "Atteikties",
+    "dismiss": "Labi"
+  },
+  "privacy": {
+    "title": "Privātuma Politika",
+    "updated": "Pēdējo reizi atjaunināts: 2025. gada janvāris",
+    "s1title": "1. Kas mēs esam",
+    "s1": "TOW24 pārvalda tīmekļa vietni tow24.is un sniedz evakuācijas un ceļa palīdzības pakalpojumus Islandē. Kontakts: info@tow24.is",
+    "s2title": "2. Kādus datus mēs vācam",
+    "s2intro": "Mēs varam vākt šādus datus, kad izmantojat mūsu vietni vai sazināties ar mums:",
+    "s2items": [
+      "Vārds un kontaktinformācija (tālrunis, e-pasts) zvanot vai sazinoties",
+      "Tehniskie dati: IP adrese, pārlūka veids, apmeklētās lapas, apmeklējuma laiks (caur sīkdatnēm)",
+      "Valodas un tēmas izvēle, saglabāta sīkdatnēs jūsu ierīcē"
+    ],
+    "s3title": "3. Kā mēs izmantojam jūsu datus",
+    "s3intro": "Mēs izmantojam jūsu datus, lai:",
+    "s3items": [
+      "Sniegtu evakuācijas un ceļa palīdzības pakalpojumus",
+      "Atbildētu uz jūsu jautājumiem",
+      "Uzlabotu mūsu vietni un pakalpojumus",
+      "Atcerētos jūsu valodas un tēmas izvēli"
+    ],
+    "s4title": "4. Sīkdatnes",
+    "s4p1": "Mēs izmantojam šādas sīkdatnes:",
+    "s4items": [
+      "tow24_lang — Saglabā valodas izvēli. Derīguma termiņš: 365 dienas.",
+      "tow24_theme — Saglabā izvēlēto krāsu tēmu. Derīguma termiņš: 365 dienas.",
+      "tow24_cookie_consent — Saglabā jūsu piekrišanu sīkdatnēm. Derīguma termiņš: 365 dienas."
+    ],
+    "s4p2": "Tās ir tikai funkcionālas sīkdatnes. Mēs neizmantojam reklāmas vai izsekošanas sīkdatnes.",
+    "s5title": "5. Trešās puses",
+    "s5": "Mēs izmantojam Google Fonts fontu ielādei. Tas var izraisīt pārlūka savienojumu ar Google serveriem. Mēs nedalām jūsu datus ar citām trešajām pusēm.",
+    "s6title": "6. Datu glabāšana",
+    "s6": "Mēs glabājam jūsu datus tikai tik ilgi, cik nepieciešams pakalpojumu sniegšanai vai saskaņā ar likuma prasībām.",
+    "s7title": "7. Jūsu tiesības",
+    "s7": "Saskaņā ar GDPR jums ir tiesības piekļūt, labot vai dzēst savus datus. Sazinieties: info@tow24.is",
+    "s8title": "8. Drošība",
+    "s8": "Mūsu vietne izmanto HTTPS šifrēšanu. Mēs veicam saprātīgus tehniskus pasākumus jūsu datu aizsardzībai.",
+    "s9title": "9. Izmaiņas",
+    "s9": "Mēs varam laiku pa laikam atjaunināt šo politiku. Datums lapas augšpusē norāda pēdējās pārskatīšanas datumu.",
+    "s10title": "10. Kontakts",
+    "s10": "Jautājumiem par šo politiku sazinieties: info@tow24.is",
+    "backHome": "← Atpakaļ uz sākumu"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "title": "TOW24 – Professional Towing Service in Iceland | 24/7",
+    "description": "TOW24 provides fast, professional towing and roadside assistance across Iceland around the clock. Call now and we'll be with you shortly."
+  },
+  "nav": {
+    "services": "Services",
+    "whyUs": "Why Us",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Iceland • Available 24/7",
+    "line1": "TOWING SERVICE",
+    "line2": "IN ICELAND",
+    "sub": "Fast, reliable and professional towing and roadside assistance throughout Iceland — 24 hours a day, 7 days a week.",
+    "callNow": "CALL NOW",
+    "ourServices": "OUR SERVICES",
+    "stat1num": "24/7",
+    "stat1lbl": "Always Available",
+    "stat2num": "60 min",
+    "stat2lbl": "Avg. Response Time",
+    "stat3num": "100%",
+    "stat3lbl": "Professional Service"
+  },
+  "services": {
+    "label": "SERVICES",
+    "title": "WHAT WE OFFER",
+    "desc": "We provide a full range of towing and roadside assistance services across Iceland.",
+    "perTrip": "/ trip",
+    "perService": "/ service",
+    "items": [
+      {
+        "icon": "tow",
+        "name": "Towing Service",
+        "desc": "Vehicle transport to a garage, home, or any other destination. Suitable for all types of vehicles.",
+        "price": "From 19,900 ISK",
+        "unit": "/ trip"
+      },
+      {
+        "icon": "flat",
+        "name": "Flat Tyre",
+        "desc": "On-site tyre change or transport if the tyre is too damaged to repair on location.",
+        "price": "From 9,900 ISK",
+        "unit": "/ service"
+      },
+      {
+        "icon": "battery",
+        "name": "Battery Issues",
+        "desc": "Jump start with booster cables or on-site battery replacement when you need to get moving.",
+        "price": "From 7,900 ISK",
+        "unit": "/ service"
+      },
+      {
+        "icon": "fuel",
+        "name": "Fuel Delivery",
+        "desc": "Fuel delivery or restart after running out. We arrive quickly so you're not stranded long.",
+        "price": "From 8,900 ISK",
+        "unit": "/ service"
+      },
+      {
+        "icon": "lock",
+        "name": "Lockout",
+        "desc": "Help when your keys are locked inside the car. Fast and damage-free unlocking.",
+        "price": "From 11,900 ISK",
+        "unit": "/ service"
+      },
+      {
+        "icon": "offroad",
+        "name": "Off-Road Recovery",
+        "desc": "Vehicle extraction when stuck in mud, snow, or completely off-road.",
+        "price": "From 24,900 ISK",
+        "unit": "/ trip"
+      }
+    ]
+  },
+  "why": {
+    "label": "WHY TOW24",
+    "title": "SERVICE YOU CAN COUNT ON",
+    "desc": "We prioritise speed, safety and professionalism every single time.",
+    "items": [
+      {
+        "title": "Fast Response",
+        "text": "We arrive within 30–60 minutes on average, wherever you are in Iceland."
+      },
+      {
+        "title": "Expert Knowledge",
+        "text": "Experienced team with expertise in all types of vehicles, from cars to heavy trucks."
+      },
+      {
+        "title": "Fair Pricing",
+        "text": "Clear pricing with no hidden fees. You know the cost before we start any work."
+      },
+      {
+        "title": "24/7 Service",
+        "text": "Open every day, at any hour. We always answer when you need us most."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "GALLERY",
+    "title": "OUR EQUIPMENT",
+    "placeholder": "Photo"
+  },
+  "cta": {
+    "title": "NEED HELP RIGHT NOW?",
+    "sub": "Give us a call and we'll be on our way.",
+    "callNow": "CALL NOW"
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "GET IN TOUCH",
+    "phoneLbl": "Phone",
+    "phoneVal": "+354 XXX XXXX",
+    "emailLbl": "Email",
+    "emailVal": "info@tow24.is",
+    "areaLbl": "Service Area",
+    "areaVal": "All of Iceland",
+    "hoursLbl": "Hours",
+    "hoursVal": "24/7 – Always open"
+  },
+  "footer": {
+    "tagline": "Professional towing service in Iceland.",
+    "services": "Services",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "copy": "© 2025 TOW24. All rights reserved."
+  },
+  "cookie": {
+    "message": "We use cookies to improve your experience. See our",
+    "privacy": "privacy policy",
+    "accept": "Accept",
+    "decline": "Decline",
+    "dismiss": "OK"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: January 2025",
+    "s1title": "1. Who We Are",
+    "s1": "TOW24 operates the website tow24.is and provides towing and roadside assistance services in Iceland. This Privacy Policy explains how we collect, use, and protect your personal data. Contact: info@tow24.is",
+    "s2title": "2. Data We Collect",
+    "s2intro": "We may collect the following data when you use our website or contact us:",
+    "s2items": [
+      "Name and contact information (phone number, email) when you call or contact us",
+      "Technical data: IP address, browser type, pages visited, time of visit (via cookies)",
+      "Language preference and theme preference stored in cookies on your device"
+    ],
+    "s3title": "3. How We Use Your Data",
+    "s3intro": "We use your data to:",
+    "s3items": [
+      "Provide our towing and roadside assistance services",
+      "Respond to your inquiries",
+      "Improve our website and services",
+      "Remember your language and theme preferences"
+    ],
+    "s4title": "4. Cookies",
+    "s4p1": "We use the following cookies:",
+    "s4items": [
+      "tow24_lang — Stores your language preference. Expires after 365 days.",
+      "tow24_theme — Stores your chosen colour theme. Expires after 365 days.",
+      "tow24_cookie_consent — Stores your cookie consent choice. Expires after 365 days."
+    ],
+    "s4p2": "These are strictly functional cookies. We do not use advertising or tracking cookies. You may decline cookies; the website will still function, but your preferences will not be saved.",
+    "s5title": "5. Third Parties",
+    "s5": "We use Google Fonts to load web fonts. This may cause your browser to contact Google servers. We do not share your personal data with any other third parties.",
+    "s6title": "6. Data Retention",
+    "s6": "We only retain your personal data for as long as necessary to provide our services or as required by law.",
+    "s7title": "7. Your Rights",
+    "s7": "Under GDPR, you have the right to access, correct, or delete your personal data. To exercise these rights, contact us at info@tow24.is.",
+    "s8title": "8. Security",
+    "s8": "Our website uses HTTPS encryption. We take reasonable technical measures to protect your data.",
+    "s9title": "9. Changes",
+    "s9": "We may update this policy from time to time. The date at the top of the page shows when it was last revised.",
+    "s10title": "10. Contact",
+    "s10": "For any questions about this policy, please contact: info@tow24.is",
+    "backHome": "← Back to Home"
+  }
+}

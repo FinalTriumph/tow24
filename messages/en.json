@@ -21,7 +21,8 @@
     "stat2num": "60 min",
     "stat2lbl": "Avg. Response Time",
     "stat3num": "100%",
-    "stat3lbl": "Professional Service"
+    "stat3lbl": "Professional Service",
+    "whatsapp": "WHATSAPP"
   },
   "services": {
     "label": "SERVICES",

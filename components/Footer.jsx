@@ -1,5 +1,8 @@
 import { Icon } from './Icons';
 
+const phone = process.env.PHONE;
+const phoneUrl = phone ? `tel:+${phone}` : '#';
+
 export default function Footer({ locale, t, privacyUrl }) {
   return (
     <footer className="site-footer">
@@ -15,7 +18,7 @@ export default function Footer({ locale, t, privacyUrl }) {
             <a href={privacyUrl}>{t.privacy}</a>
           </div>
           <div>
-            <a href="tel:+354XXXXXXX" className="btn-call" style={{ fontSize: '1rem', padding: '14px 24px' }}>
+            <a href={phoneUrl} className="btn-call" style={{ fontSize: '1rem', padding: '14px 24px' }}>
               <Icon name="phone" size={18} />
               {t.callNow}
             </a>

@@ -21,7 +21,8 @@
     "stat2num": "60 мин",
     "stat2lbl": "Среднее время приезда",
     "stat3num": "100%",
-    "stat3lbl": "Профессионализм"
+    "stat3lbl": "Профессионализм",
+    "whatsapp": "WHATSAPP"
   },
   "services": {
     "label": "УСЛУГИ",

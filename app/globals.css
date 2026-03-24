@@ -424,3 +424,55 @@ a.contact-item:hover { border-color: var(--accent); }
   .btn-call, .btn-scroll { width: 100%; justify-content: center; }
   .footer-top { flex-direction: column; gap: 20px; }
 }
+
+/* ── Language switcher — flags + labels ────────────────── */
+.lang-switcher button {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 11px;
+}
+.lang-flag { font-size: 1.1rem; line-height: 1; }
+.lang-label { font-size: 0.8rem; }
+
+/* ── WhatsApp button in hero CTA ───────────────────────── */
+.btn-whatsapp {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25D366; color: #fff;
+  padding: 16px 28px; border-radius: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.15rem; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.30);
+}
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 36px rgba(37,211,102,0.45);
+}
+
+/* ── Floating WhatsApp button ──────────────────────────── */
+.whatsapp-float {
+  position: fixed; bottom: 24px; right: 24px; z-index: 500;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px rgba(37,211,102,0.60);
+}
+.whatsapp-float svg { width: 28px; height: 28px; }
+
+/* Push floating button up when cookie notice is visible */
+.cookie-banner.show ~ * .whatsapp-float,
+body:has(.cookie-banner.show) .whatsapp-float {
+  bottom: 80px;
+}
+
+@media (max-width: 480px) {
+  .btn-whatsapp { width: 100%; justify-content: center; }
+  .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+  .whatsapp-float svg { width: 24px; height: 24px; }
+}

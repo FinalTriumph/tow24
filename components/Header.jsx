@@ -2,7 +2,12 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { locales } from '../lib/locales';
 
-const LANG_LABELS = { is: 'IS', en: 'EN', ru: 'RU', lv: 'LV' };
+const LANG_LABELS = {
+  is: { flag: '🇮🇸', label: 'IS' },
+  en: { flag: '🇬🇧', label: 'EN' },
+  ru: { flag: '🇷🇺', label: 'RU' },
+  lv: { flag: '🇱🇻', label: 'LV' },
+};
 const LANG_COOKIE = 'tow24_lang';
 
 function setCookie(name, value, days) {
@@ -41,9 +46,10 @@ export default function Header({ locale }) {
                   key={loc}
                   onClick={() => handleLocaleSwitch(loc)}
                   className={locale === loc ? 'active' : ''}
-                  aria-label={`Switch to ${LANG_LABELS[loc]}`}
+                  aria-label={`Switch to ${LANG_LABELS[loc].label}`}
                 >
-                  {LANG_LABELS[loc]}
+                  <span className="lang-flag">{LANG_LABELS[loc].flag}</span>
+                  <span className="lang-label">{LANG_LABELS[loc].label}</span>
                 </button>
               ))}
             </nav>

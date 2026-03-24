@@ -41,6 +41,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           copy:     tFooter('copy'),
           callNow:  tCta('callNow'),
         }}
+        privacyUrl={privacyUrl}
       />
       <CookieBanner
         t={{

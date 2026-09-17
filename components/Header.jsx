@@ -21,13 +21,8 @@ export default function Header({ locale }) {
   const router = useRouter();
 
   function handleLocaleSwitch(targetLocale) {
-    // Save to cookie
     setCookie(LANG_COOKIE, targetLocale, 365);
-
-    // Swap the locale segment in the current path
-    // pathname is always like /is, /en/privacy-policy etc.
     const segments = pathname.split('/').filter(Boolean);
-    // Replace first segment (current locale) with target locale
     segments[0] = targetLocale;
     router.push('/' + segments.join('/'));
   }
@@ -36,9 +31,13 @@ export default function Header({ locale }) {
     <header className="topbar">
       <div className="container">
         <div className="topbar-inner">
-          <a href={`/${locale}`} className="logo">
-            TOW<span>24</span>
+          {/* Logo: Tow (red) + 24 (yellow) + .is (red) */}
+          <a href={`/${locale}`} className="logo" aria-label="Tow24.is — home">
+            <span className="tow">Tow</span>
+            <span className="num">24</span>
+            <span className="tld">.is</span>
           </a>
+
           <div className="topbar-right">
             <nav className="lang-switcher" aria-label="Language">
               {locales.map(loc => (

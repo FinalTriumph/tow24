@@ -1,15 +1,20 @@
 import { Icon } from './Icons';
 
-const phone = process.env.PHONE;
-const phoneUrl = phone ? `tel:+${phone}` : '#';
-
 export default function Footer({ locale, t, privacyUrl }) {
+  const phone = process.env.PHONE;
+  const phoneUrl = phone ? `tel:+${phone}` : '#';
+
   return (
     <footer className="site-footer">
       <div className="container">
         <div className="footer-top">
           <div>
-            <div className="footer-logo">TOW<span>24</span></div>
+            {/* Logo: Tow (red) + 24 (yellow) + .is (red) */}
+            <div className="footer-logo">
+              <span className="tow">Tow</span>
+              <span className="num">24</span>
+              <span className="tld">.is</span>
+            </div>
             <div className="footer-tagline">{t.tagline}</div>
           </div>
           <div className="footer-links">

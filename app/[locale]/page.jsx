@@ -4,12 +4,6 @@ import { locales } from '../../lib/locales';
 import RevealWrapper from '../../components/RevealWrapper';
 import { Icon } from '../../components/Icons';
 
-const phone = process.env.PHONE;
-const phoneUrl = phone ? `tel:+${phone}` : '#';
-
-const whatsappPhone = process.env.WHATSAPP_PHONE;
-const whatsappUrl = whatsappPhone ? `https://wa.me/${whatsappPhone}` : '#';
-
 // WhatsApp SVG icon (official brand shape)
 function IconWhatsApp() {
   return (
@@ -35,15 +29,22 @@ export default async function HomePage({ params: { locale } }) {
 
   const services = tServices.raw('items');
   const whyItems = tWhy.raw('items');
+
   const galleryItems = [
     { cls: 'g1' }, { cls: 'g2' }, { cls: 'g3' }, { cls: 'g4' }, { cls: 'g5' },
   ];
 
+  const phone = process.env.PHONE;
+  const phoneUrl = phone ? `tel:+${phone}` : '#';
+
+  const whatsappPhone = process.env.WHATSAPP_PHONE;
+  const whatsappUrl = whatsappPhone ? `https://wa.me/${whatsappPhone}` : '#';
+
   const contactItems = [
-    { icon: 'phone',    label: tContact('phoneLbl'), value: tContact('phoneVal'), href: phoneUrl },
-    { icon: 'email',    label: tContact('emailLbl'), value: tContact('emailVal'), href: 'mailto:info@tow24.is' },
-    { icon: 'location', label: tContact('areaLbl'),  value: tContact('areaVal'),  href: null },
-    { icon: 'clock',    label: tContact('hoursLbl'), value: tContact('hoursVal'), href: null },
+    { icon: 'phone',    label: tContact('phoneLbl'), value: phone ? `+${phone.slice(0,3)} ${phone.slice(3,6)} ${phone.slice(6)}` : '+354 775 9966', href: phoneUrl, className: 'contact-phone' },
+    { icon: 'email',    label: tContact('emailLbl'), value: tContact('emailVal'), href: 'mailto:info@tow24.is', className: '' },
+    { icon: 'location', label: tContact('areaLbl'),  value: tContact('areaVal'),  href: null,                 className: '' },
+    { icon: 'clock',    label: tContact('hoursLbl'), value: tContact('hoursVal'), href: null,                 className: '' },
   ];
 
   return (
@@ -56,10 +57,14 @@ export default async function HomePage({ params: { locale } }) {
             <div className="hero-badge">
               🚛 {tHero('badge')}
             </div>
+
+            {/* Title: Tow (red) / 24 (yellow) / subtitle (white) */}
             <h1 className="hero-title">
-              {tHero('line1')}
+              <span className="word-tow">Tow</span>
+              <span className="word-24">24</span>
               <span className="line2">{tHero('line2')}</span>
             </h1>
+
             <p className="hero-sub">{tHero('sub')}</p>
             <div className="hero-cta">
               <a href={phoneUrl} className="btn-call">
@@ -80,18 +85,16 @@ export default async function HomePage({ params: { locale } }) {
               </a>
             </div>
             <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-num">{tHero('stat1num')}</div>
-                <div className="stat-label">{tHero('stat1lbl')}</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-num">{tHero('stat2num')}</div>
-                <div className="stat-label">{tHero('stat2lbl')}</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-num">{tHero('stat3num')}</div>
-                <div className="stat-label">{tHero('stat3lbl')}</div>
-              </div>
+              {[
+                [tHero('stat1num'), tHero('stat1lbl')],
+                [tHero('stat2num'), tHero('stat2lbl')],
+                [tHero('stat3num'), tHero('stat3lbl')],
+              ].map(([num, lbl], i) => (
+                <div key={i} className="stat-item">
+                  <div className="stat-num">{num}</div>
+                  <div className="stat-label">{lbl}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -109,15 +112,10 @@ export default async function HomePage({ params: { locale } }) {
             {services.map((s, i) => (
               <RevealWrapper key={i}>
                 <div className="service-card">
-                  <div className="service-icon">
-                    <Icon name={s.icon} size={24} />
-                  </div>
+                  <div className="service-icon"><Icon name={s.icon} size={24} /></div>
                   <div className="service-name">{s.name}</div>
                   <p className="service-desc">{s.desc}</p>
-                  <div className="service-price">
-                    {s.price}
-                    <span>{s.unit}</span>
-                  </div>
+                  <div className="service-price">{s.price}<span>{s.unit}</span></div>
                 </div>
               </RevealWrapper>
             ))}
@@ -176,8 +174,7 @@ export default async function HomePage({ params: { locale } }) {
               <div className="cta-sub">{tCta('sub')}</div>
             </div>
             <a href={phoneUrl} className="btn-call-dark">
-              <Icon name="phone" size={20} />
-              {tCta('callNow')}
+              <Icon name="phone" size={20} />{tCta('callNow')}
             </a>
           </div>
         </div>
@@ -195,22 +192,19 @@ export default async function HomePage({ params: { locale } }) {
               {contactItems.map((item, i) => {
                 const inner = (
                   <>
-                    <div className="contact-icon">
-                      <Icon name={item.icon} size={18} />
-                    </div>
+                    <div className="contact-icon"><Icon name={item.icon} size={18} /></div>
                     <div>
                       <div className="contact-label">{item.label}</div>
                       <div className="contact-value">{item.value}</div>
                     </div>
                   </>
                 );
-                return item.href ? (
+                return (
                   <RevealWrapper key={i}>
-                    <a href={item.href} className="contact-item">{inner}</a>
-                  </RevealWrapper>
-                ) : (
-                  <RevealWrapper key={i}>
-                    <div className="contact-item">{inner}</div>
+                    {item.href
+                      ? <a href={item.href} className={`contact-item${item.className ? ' ' + item.className : ''}`}>{inner}</a>
+                      : <div className="contact-item">{inner}</div>
+                    }
                   </RevealWrapper>
                 );
               })}

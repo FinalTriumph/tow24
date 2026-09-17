@@ -41,7 +41,7 @@ export default async function HomePage({ params: { locale } }) {
   const whatsappUrl = whatsappPhone ? `https://wa.me/${whatsappPhone}` : '#';
 
   const contactItems = [
-    { icon: 'phone',    label: tContact('phoneLbl'), value: phone ? `+${phone.slice(0,3)} ${phone.slice(3,6)} ${phone.slice(6)}` : '+354 775 9966', href: phoneUrl, className: 'contact-phone' },
+    { icon: 'phone',    label: tContact('phoneLbl'), value: phone ? `+${phone.slice(0,3)} ${phone.slice(3,6)} ${phone.slice(6)}` : '#', href: phoneUrl, className: 'contact-phone' },
     { icon: 'email',    label: tContact('emailLbl'), value: tContact('emailVal'), href: 'mailto:info@tow24.is', className: '' },
     { icon: 'location', label: tContact('areaLbl'),  value: tContact('areaVal'),  href: null,                 className: '' },
     { icon: 'clock',    label: tContact('hoursLbl'), value: tContact('hoursVal'), href: null,                 className: '' },
